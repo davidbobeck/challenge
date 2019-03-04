@@ -1,6 +1,3 @@
-# require 'spec_helper'
-
-# RSpec.describe Api::ChallengeController, type: :controller do
 RSpec.describe "API Challenge", type: 'request' do
 
   context 'when passing no urls' do

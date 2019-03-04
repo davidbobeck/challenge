@@ -5,7 +5,7 @@ module Api
     # Handles processing for the
     # /pdf_metadata API endpoint 
     def self.process(params)
-      unless params.key?(:urls)
+      unless params.key?(:urls) && !params[:urls].blank?
         return [{message: 'Missing urls in request'}, :bad_request]
       end
 

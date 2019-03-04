@@ -42,6 +42,9 @@ GEM
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
     afm (0.2.2)
+    apitome (0.2.1)
+      kramdown
+      railties
     arel (8.0.0)
     bindex (0.5.0)
     builder (3.2.3)
@@ -83,6 +86,7 @@ GEM
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
     json (2.2.0)
+    kramdown (2.1.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -97,6 +101,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     multi_json (1.13.1)
+    mustache (1.1.0)
     nio4r (2.3.1)
     nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
@@ -141,6 +146,10 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    rspec (3.8.0)
+      rspec-core (~> 3.8.0)
+      rspec-expectations (~> 3.8.0)
+      rspec-mocks (~> 3.8.0)
     rspec-core (3.8.0)
       rspec-support (~> 3.8.0)
     rspec-expectations (3.8.2)
@@ -158,6 +167,10 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
+    rspec_api_documentation (6.1.0)
+      activesupport (>= 3.0.0)
+      mustache (~> 1.0, >= 0.99.4)
+      rspec (~> 3.0)
     ruby-rc4 (0.1.5)
     ruby_dep (1.5.0)
     rubyzip (1.2.2)
@@ -215,6 +228,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  apitome
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
@@ -226,6 +240,7 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.6)
   rspec-rails
+  rspec_api_documentation
   sass-rails (~> 5.0)
   selenium-webdriver
   spring

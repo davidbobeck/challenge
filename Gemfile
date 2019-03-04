@@ -33,7 +33,6 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'pdf-reader'
 gem 'docraptor'
-gem 'rspec-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -42,6 +41,9 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'pry'
+  gem 'rspec-rails'
+  gem 'rspec_api_documentation'
+  gem 'apitome'
 end
 
 group :development do
