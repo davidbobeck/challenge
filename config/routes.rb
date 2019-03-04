@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get '/' => 'challenge#welcome' 
-  get '/pdf_metadata(/:urls)' => 'challenge#pdf_metadata' 
+  get '/' => 'welcome#index' 
+  get '/pdf_metadata(/:urls)' => 'api/challenge#pdf_metadata' 
 end
