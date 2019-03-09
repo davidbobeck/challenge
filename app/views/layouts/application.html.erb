@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Challenge</title>
+    <title>PDF Challenge</title>
     <%= csrf_meta_tags %>
 
+    <%= stylesheet_link_tag    'reset.css', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'animate.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= yield :styles %>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= yield :scripts %>
   </head>
 
   <body>

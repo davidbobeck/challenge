@@ -1,0 +1,35 @@
+- content_for :styles do
+  css:
+
+    .welcome {
+      margin: 80px auto 0 auto;
+      color: black;
+      font-family: arial;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .subtext {
+      margin: 20px auto 0 auto;
+      color: gray;
+      font-family: arial;
+      font-size: 20px;
+      text-align: center;
+      animation-delay: 1s;
+    }
+    .link-container {
+      margin: 20px auto 0 auto;
+      text-align: center
+    }
+    .doc-link {
+      margin: 20px auto 0 auto;
+      color: blue;
+      font-family: arial;
+      font-size: 15px;
+      text-align: center;
+    }
+
+.welcome = 'The PDF Metadata Challenge'
+.subtext.animated.fadeIn = 'by David Bobeck'
+.link-container
+  = link_to 'view the API docs', swagger_view_path, class: 'doc-link'

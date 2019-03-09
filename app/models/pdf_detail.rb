@@ -1,5 +1,5 @@
 class PdfDetail
-  attr_accessor :url, :pdf_version, :page_count, :info, :metadata, :error
+  attr_accessor :url, :pdf_version, :page_count, :info, :metadata
 
   #-------------------------------------
   def <=>(other)

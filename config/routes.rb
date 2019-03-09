@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
-  get '/' => 'welcome#index' 
-  get '/pdf_metadata(/:urls)' => 'api/challenge#pdf_metadata' 
+
+  # The default root takes us to a human facing welcome view
+  root to: "welcome#index"
+  
+  # The challenge API
+  get 'api/v1/pdf_metadata(/:urls)', to: 'api/v1/pdf#pdf_metadata' 
+
+  # Temporary endpoint will generate documentation
+  # Should be gated by admin access.
+  # Should be a POST
+  get '/docs/make', to: "docs#make"
+
+  # Show documentation using swagger ui
+  get '/docs', to: redirect('/swagger/dist/index.html?url=/docs/api-docs.json'), as: :swagger_view
+
 end

@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'pdf-reader'
 gem 'docraptor'
+gem 'slim-rails'
+gem 'swagger-blocks'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -40,10 +42,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'pry'
   gem 'rspec-rails'
-  gem 'rspec_api_documentation'
-  gem 'apitome'
 end
 
 group :development do
