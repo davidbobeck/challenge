@@ -1,4 +1,4 @@
-class SwaggerForDocsController
+class SwaggerForSwaggerController
   include Swagger::Blocks
 
   swagger_root do

@@ -1,9 +1,9 @@
-class DocsController < ApplicationController
+class SwaggerController < ApplicationController
 
   #-------------------------------------
   # A list of all classes that have swagger_* declarations.
   SWAGGERED_CLASSES = [
-    SwaggerForDocsController,
+    SwaggerForSwaggerController,
     SwaggerForPdfController,
     SwaggerForPdfDetail,
     SwaggerForPdfError,

@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   # Temporary endpoint will generate documentation
   # Should be gated by admin access.
   # Should be a POST
-  get '/docs/make', to: 'docs#make'
+  get '/swagger/make', to: 'swagger#make'
 
   # Show documentation using swagger ui
-  get 'docs', to: 'docs#index', as: :swagger_view
+  get '/docs', to: 'swagger#index', as: :swagger_view
 end
