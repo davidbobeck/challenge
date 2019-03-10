@@ -7,6 +7,8 @@ class WelcomeController < ApplicationController
   # become useful as the API grows in complexity.
   # Perhaps for FAQs or company info. 
   def index
+    host_url = ENV['API_HOST_URL'] || 'localhost:3000'
+    @api_root = File.join(host_url, 'api', 'v1')
   end
 
 end

@@ -9,6 +9,13 @@
       font-weight: bold;
       text-align: center;
     }
+    .api-root {
+      margin: 10px auto 0 auto;
+      color: black;
+      font-family: arial;
+      font-size: 20px;
+      text-align: center;
+    }
     .subtext {
       margin: 20px auto 0 auto;
       color: gray;
@@ -30,6 +37,7 @@
     }
 
 .welcome = 'The PDF Metadata Challenge'
+.api-root = "The API lives at #{@api_root}"
 .subtext.animated.fadeIn = 'by David Bobeck'
 .link-container
   = link_to 'view the API docs', swagger_view_path, class: 'doc-link'

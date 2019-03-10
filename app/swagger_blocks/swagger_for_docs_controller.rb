@@ -6,7 +6,7 @@ class SwaggerForDocsController
     info do
       key :version, '1.0.0'
       key :title, 'Coding Challenge'
-      key :description, 'A mashup of DocRaptor and PDF::Reader.'
+      key :description, 'A mashup of DocRaptor (https://docraptor.com) and PDF::Reader (https://github.com/yob/pdf-reader)'
       # key :termsOfService, 'http://somewhere.com/terms/'
       contact do
         key :name, 'David Bobeck'
