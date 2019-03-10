@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   get 'api/v1/pdf_metadata(/:urls)', to: 'api/v1/pdf#pdf_metadata' 
 
   # Temporary endpoint will generate documentation
-  # Should be gated by admin access.
-  # Should be a POST
+  # - Should be gated by admin access.
+  # - Should be a POST
   get '/swagger/make', to: 'swagger#make'
 
   # Show documentation using swagger ui
