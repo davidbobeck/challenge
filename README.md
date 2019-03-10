@@ -17,14 +17,12 @@ rails new challenge --skip-active-record
 
 #### Gems added  
 ``` 
-  gem 'pdf-reader'
-  gem 'docraptor'
-  gem 'rspec-rails'
-  gem 'swagger-blocks'
+gem 'pdf-reader'
+gem 'docraptor'
+gem 'slim-rails'
+gem 'swagger-blocks'
+gem 'swagger-ui_rails5'
 ``` 
-
-#### Add swagger-ui to /public
-git submodule add https://github.com/swagger-api/swagger-ui.git swagger
 
 #### How to run the test suite  
 ``` 
@@ -32,10 +30,10 @@ bundle exec rspec
 ``` 
 
 #### How to build the API documentation  
-Temporary. 
+Temporary solution... 
 * Should be moved behind admin access.
 * Should be a POST.
 ``` 
-GET /docs/make
+GET /swagger/make
 ``` 
 
